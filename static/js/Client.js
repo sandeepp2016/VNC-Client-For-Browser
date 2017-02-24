@@ -3,7 +3,7 @@
   'use strict';
 
   var Config = {
-      URL: 'http://10.201.143.14:8090'
+      URL: 'ec2-52-41-87-122.us-west-2.compute.amazonaws.com:8090'
     };
   var keyMap = {
     8: [
