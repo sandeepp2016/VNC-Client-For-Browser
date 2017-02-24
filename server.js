@@ -130,8 +130,11 @@ function disconnectClient(socket) {
   io = io.listen(server, { log: false });
   io.sockets.on('connection', function (socket) {
     console.info('Client connected');
+    console.log("======= ",socket.handshake.address.address);
+    var host =socket.handshake.address.address
     socket.on('init', function (config) {
-      var r = createRfbConnection(config, socket);
+      config.host=host;
+     var r = createRfbConnection(config, socket);
       socket.on('mouse', function (evnt) {
         r.sendPointer(evnt.x, evnt.y, evnt.button);
       });
