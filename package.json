@@ -1,0 +1,12 @@
+{
+  "name": "vnc_client",
+  "version": "0.0.1",
+
+  "dependencies": {
+    "connect": "~2.8.5",
+    "express": "~4.12.4",
+    "rfb": "^0.2.3",
+    "socket.io": "^0.9.17",
+    "node-png": "~0.4.3"
+  }
+}
